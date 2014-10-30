@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MyActivity"
+    android:background="@drawable/background">
+
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:layout_alignStart="@+id/editPassword" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/editPassword"
+        android:layout_below="@+id/editText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="43dp"
+        android:text="Password" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:id="@+id/buttonRegister"
+        android:layout_below="@+id/editPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="41dp"
+        android:layout_alignParentEnd="false" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:id="@+id/buttonLogin"
+        android:layout_below="@+id/buttonRegister"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/vkButton"
+        android:layout_below="@+id/buttonLogin"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/vkontakte32"
+        android:layout_toLeftOf="@+id/buttonRegister"
+        android:background="@null"
+        android:adjustViewBounds="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/twitterButton"
+        android:layout_alignTop="@+id/vkButton"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/twitter32"
+        android:focusableInTouchMode="false"
+        android:background="@null" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton3"
+        android:layout_alignTop="@+id/twitterButton"
+        android:layout_toRightOf="@+id/buttonRegister"
+        android:src="@drawable/facebook32"
+        android:background="@null" />
+
+</RelativeLayout>
